@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.BMRMetric"
+             Title="BMR Calculator (Metric system)">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="15" BackgroundColor="White">
+            <Label Text="BMR Calculator"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="30"
+               TextColor="Black"/>
+
+            <Label Text="The calculator below will help you in calculating your maintenance caloric level. Make sure that you enter your weight, height, age and weekly activity level correctly."
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           TextColor="Black"
+           FontSize="20"/>
+
+            <Label Text="Weight (in kg):"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               x:Name="lWeight"/>
+
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <Entry VerticalOptions="Center"
+               HorizontalOptions="Center"
+               x:Name="eWeight"
+               TextColor="Black"
+               Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Height (in cm):"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               x:Name="lHeight"/>
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <Entry VerticalOptions="Center"
+               HorizontalOptions="Center"
+               x:Name="eHeight"
+               TextColor="Black"
+               Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Age:"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               x:Name="lAge"/>
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <Entry VerticalOptions="Center"
+               HorizontalOptions="Center"
+               x:Name="eAge"
+               TextColor="Black"
+               Keyboard="Numeric"/>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Gender:"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               x:Name="lGender"/>
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <RadioButton x:Name="bMale" Content="Male" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                    <RadioButton x:Name="bFemale" Content="Female" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+
+            <Label Text="Activity Level: "
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="Black"
+               x:Name="lActivity"/>
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <RadioButton x:Name="rSedentary" Content="Sedentary" TextColor="Black" BackgroundColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <RadioButton x:Name="rLightlyActive" Content="Lightly active" TextColor="Black" BackgroundColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <RadioButton x:Name="rModeratelyActive" Content="Moderately active" TextColor="Black" BackgroundColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <RadioButton x:Name="rVeryActive" Content="Very active" TextColor="Black" BackgroundColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <RadioButton x:Name="rExtremelyActive" Content="Extremely active" TextColor="Black" BackgroundColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Button Text="Calculate BMR"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                Clicked="Calculate_Clicked"/>
+
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <Label x:Name="lResult"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="20"
+               TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

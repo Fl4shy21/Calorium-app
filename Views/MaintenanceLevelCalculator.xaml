@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.MaintenanceLevelCalculator"
+             Title="Calculators"
+             Shell.TabBarIsVisible="True"
+             xmlns:loc="clr-namespace:LocalizationResourceManager.Maui;assembly=LocalizationResourceManager.Maui">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="15" BackgroundColor="White">
+            <Label Text="BMR Calculators"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   TextColor="Black"/>
+
+            <Label Text="Choose a unit that you are familiar with, either metric or imperial. Make sure that you entered all informations correctly, in order to have your BMR level displayed correctly as well."
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+
+            <Button Text="BMR Calculator (Metric system)"
+                    x:Name="metricBtn"
+                    Clicked="metricBtn_Clicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"/>
+
+            <Button Text="BMR Calculator (Imperial system)"
+                    x:Name="imperialBtn"
+                    Clicked="imperialBtn_Clicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"/>
+
+            <Label Text="Macro Calculator"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="30"
+                   TextColor="Black"/>
+
+            <Label Text="Here you can find a calculator, meant to help you calculate the amount of protein, carbohydrates and fats that you need to consume on a daily regular basis."
+                   TextColor="Black"
+                   FontSize="20"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Enter your maintenance caloric level:"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <Entry x:Name="eBMR"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Keyboard="Numeric"
+                   TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+
+            <Button x:Name="proteinfatcarbsBtn"
+                    Clicked="proteinfatcarbsBtn_Clicked"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    TextColor="Black"
+                    Text="Calculate"
+                    BackgroundColor="LightGreen"/>
+
+            <Frame BorderColor="LightGreen" CornerRadius="5" Padding="10" Margin="10">
+                <StackLayout>
+                    <Label x:Name="carbsResult"
+                   Text=""
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="20"/>
+
+                    <Label x:Name="proteinResult"
+                   Text=""
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="20"/>
+
+                    <Label x:Name="fatsResult"
+                   Text=""
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="20"/>
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

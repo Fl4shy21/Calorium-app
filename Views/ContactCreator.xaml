@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.ContactCreator"
+             Title="Contact Creator"
+             BackgroundColor="White"
+             Shell.TabBarIsVisible="True">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Label Text="G-Mail: albert.malicski98@gmail.com&#x0a;"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="25"
+               TextColor="OrangeRed"/>
+        <Label Text="YouTube: "
+               TextDecorations="Underline"
+               TextColor="Red"
+               FontSize="25"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Label.GestureRecognizers>
+            <TapGestureRecognizer Tapped="YouTubebtn_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Label Text="Discord: Fl4shy &#x0a;"
+               TextColor="Blue"
+               FontSize="25"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        <Label Text="Fiverr: "
+               TextDecorations="Underline"
+               TextColor="Green"
+               FontSize="25"
+               VerticalOptions="Center"
+               HorizontalOptions="Center">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="FiverrURL_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <Button Text="Back to Menu"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                x:Name="cancelBtn"
+                Clicked="cancelBtn_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
