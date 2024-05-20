@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.GetToKnow"
+             Title="Get To Know"
+             xmlns:loc="clr-namespace:LocalizationResourceManager.Maui;assembly=LocalizationResourceManager.Maui">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="15" BackgroundColor="White">
+        <Label 
+            Text="This page is fully about necessary information, regarding training, nutrition and rest."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="Black"
+            FontSize="20"/>
+        <Label
+            Text="Nutrition:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+        <Image Source="diet.png" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button Text="Proteins"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="proteinsBtn"
+                    Pressed="proteinsBtn_Pressed"
+                    Released="proteinsBtn_Released"/>
+
+            <Button Text="Carbohydrates"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="carbsBtn"
+                    Pressed="carbsBtn_Pressed"
+                    Released="carbsBtn_Released"/>
+            
+            <Button Text="Fats"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="fatsBtn"
+                    Pressed="fatsBtn_Pressed"
+                    Released="fatsBtn_Released"/>
+
+            <Button Text="Bulk"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="bulkBtn"
+                    Pressed="bulkBtn_Pressed"
+                    Released="bulkBtn_Released"/>
+
+            <Button Text="Cut"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="cutBtn"
+                    Pressed="cutBtn_Pressed"
+                    Released="cutBtn_Released"/>
+
+            <Label x:Name="proteinLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="carbsLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="fatsLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="bulkLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="cutLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label 
+            Text="Training:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+            <Image Source="gym.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            <Button Text="Getting used"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="usedBtn"
+                    Pressed="usedBtn_Pressed"
+                    Released="usedBtn_Released"/>
+
+            <Button Text="Rest"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="restBtn"
+                    Pressed="restBtn_Pressed"
+                    Released="restBtn_Released"/>
+
+            <Button Text="What is Heavy Duty?"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="heavydutyBtn"
+                    Pressed="heavydutyBtn_Pressed"
+                    Released="heavydutyBtn_Released"/>
+
+            <Button Text="Overtraining"
+                   BackgroundColor="LightGreen"
+                   TextColor="Black"
+                   FontSize="15"
+                   x:Name="overtrainingBtn"
+                   Pressed="overtrainingBtn_Pressed"
+                   Released="overtrainingBtn_Released"/>
+
+            <Label x:Name="usedLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="restLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="heavydutyLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="overtrainingLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label 
+            Text="Supplements:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+            <Image Source="supplements.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            <Button Text="Whey protein"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="wheyBtn"
+                    Pressed="wheyBtn_Pressed"
+                    Released="wheyBtn_Released"/>
+            
+            <Button Text="Creatine"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="creatineBtn"
+                    Pressed="creatineBtn_Pressed"
+                    Released="creatineBtn_Released"/>
+
+            <Button Text="Vitamins"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="vitaminsBtn"
+                    Pressed="vitaminsBtn_Pressed"
+                    Released="vitaminsBtn_Released"/>
+
+            <Button Text="BCAAs"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="bcaaBtn"
+                    Pressed="bcaaBtn_Pressed"
+                    Released="bcaaBtn_Released"/>
+
+            <Button Text="Fish Oil"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="fishoilBtn"
+                    Pressed="fishoilBtn_Pressed"
+                    Released="fishoilBtn_Released"/>
+
+            <Label x:Name="wheyLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="creatineLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="vitaminsLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="BCAAlabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="fishoilLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
