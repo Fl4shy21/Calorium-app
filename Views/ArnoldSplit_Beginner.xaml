@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.ArnoldSplit_Beginner"
+             Title="Arnold Split (Beginner)">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="White">
+        <Image Source="dumbbell.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50"/>
+            
+        <Label Text="Day 1: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="Black"/>
+
+        <Label Text="Chest: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="Black"/>
+
+        <Label Text="Dips: 1 set to failure,&#xA; Pec-deck: 2 sets x 10-15 reps,&#xA; Incline Bench Press: 3 sets x 10-15 reps,&#xA; Bench Press: 4 sets x 8-12 reps.&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+        <Label Text="Back: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="Black"/>
+
+        <Label Text="Barbell rows : 3 sets x 8-12 reps,&#xA; T-bar Rows: 3 sets x 8-12 reps,&#xA; Pull-ups: 2 sets x 6-10 reps,&#xA; Lat-pulldowns: 2 sets x 8-15 reps.&#xA;"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Day 2: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="Black"
+               FontAttributes="Bold"/>
+
+        <Label Text="Biceps: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="Black"
+               FontAttributes="Bold"/>
+
+        <Label Text="Bicep Curls: 2 sets x 10-15 reps,&#xA; Hammer Curls: 3 sets x 8-12 reps.&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+        <Label Text="Triceps: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="Black"/>
+
+        <Label Text="Tricep Dips: 2 sets x 10-15 reps,&#xA; Tricep pushdowns: 3 sets x 8-12 reps.&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+        <Label Text="Shoulders: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="Black"/>
+
+        <Label Text="Shoulder press: 2 sets x 10-15 reps,&#xA; Lateral raises: 3 sets x 8-12 reps,&#xA; Reverse pec-deck: 3 sets x 8-12 reps.&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+        <Label Text="Day 3: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="20"/>
+
+        <Label Text="Legs: &#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="20"/>
+
+        <Label Text="Squats: 3 sets x 8-12 reps,&#xA; Leg extensions: 3 sets x 8-12 reps,&#xA; Leg press: 3 sets x 8-12 reps,&#xA; Leg curls: 2 sets x 10-15 reps,&#xA; Standing calf raises: 3 sets x 10-15 reps.&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+        <Button Text="Back"
+                x:Name="backBtn"
+                Clicked="backBtn_Clicked"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                BackgroundColor="LightGreen"
+                TextColor="Black"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
