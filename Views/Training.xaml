@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.Training"
+             Title="Training">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="White" Padding="10" Spacing="10">
+            <Image Source="dumbbell.png" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50"/>
+
+            <Label 
+            Text="Training:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+            <Button Text="Getting used"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="usedBtn"
+                    Pressed="usedBtn_Pressed"
+                    Released="usedBtn_Released"/>
+
+            <Button Text="Rest"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="restBtn"
+                    Pressed="restBtn_Pressed"
+                    Released="restBtn_Released"/>
+
+            <Button Text="What is Heavy Duty?"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="heavydutyBtn"
+                    Pressed="heavydutyBtn_Pressed"
+                    Released="heavydutyBtn_Released"/>
+
+            <Button Text="Overtraining"
+                   BackgroundColor="LightGreen"
+                   TextColor="Black"
+                   FontSize="15"
+                   x:Name="overtrainingBtn"
+                   Pressed="overtrainingBtn_Pressed"
+                   Released="overtrainingBtn_Released"/>
+
+            <Label x:Name="usedLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="restSetsLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="restTrainingLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="heavydutyLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="overtrainingLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
