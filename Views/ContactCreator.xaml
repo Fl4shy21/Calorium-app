@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.ContactCreator"
+             Title="Contact Creator"
+             BackgroundColor="White"
+             Shell.TabBarIsVisible="True">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Label Text="G-Mail: albert.malicski98@gmail.com&#x0a;"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               FontSize="20"
+               TextColor="OrangeRed"/>
+        <Image Source="youtube.png"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               WidthRequest="75">
+            <Image.GestureRecognizers>
+            <TapGestureRecognizer Tapped="YouTubebtn_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Label Text="Discord: Fl4shy &#x0a;"
+               TextColor="Blue"
+               FontSize="25"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"/>
+        <Image Source="fiverr.png"
+               VerticalOptions="Start"
+               HorizontalOptions="Start">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="FiverrURL_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Button Text="Back to Menu"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                x:Name="cancelBtn"
+                Clicked="cancelBtn_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
