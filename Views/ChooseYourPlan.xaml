@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.ChooseYourPlan"
+             Title="Choose Your Plan"
+             xmlns:loc="clr-namespace:LocalizationResourceManager.Maui;assembly=LocalizationResourceManager.Maui">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="15" BackgroundColor="White">
+            <Label 
+            Text="On this page, you are free to choose from the predetermined workout plans. All of them are especially made for natural bodybuilders."
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="Black"
+            FontSize="20"/>
+
+            <Button Text="Workouts for beginners"
+                    x:Name="beginnerBtn"
+                    Clicked="beginnerBtn_Clicked"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
+            <Button Text="Workouts for intermediates"
+                    x:Name="intermediateBtn"
+                    Clicked="intermediateBtn_Clicked"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
+            <Button Text="Advanced workouts (Heavy Duty)"
+                    x:Name="advancedBtn"
+                    Clicked="advancedBtn_Clicked"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
