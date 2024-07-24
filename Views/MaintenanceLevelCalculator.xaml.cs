@@ -172,6 +172,8 @@ namespace Calorium.Views
             BMRBtn.BackgroundColor = Colors.LightBlue;
             macroBtn.BackgroundColor = Colors.LightGreen;
             caloricBtn.BackgroundColor = Colors.LightGreen;
+            metricBMR.IsVisible = false;
+            imperialBMR.IsVisible = false;
         }
 
         private void ChooseImperial_CheckedChanged(object sender, CheckedChangedEventArgs e)
