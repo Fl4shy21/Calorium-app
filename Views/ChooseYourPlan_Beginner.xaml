@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.ChooseYourPlan_Beginner"
+             Title="">
+    <VerticalStackLayout BackgroundColor="White" Spacing="15" Padding="15">
+        <Button Text="Push-Pull-Legs"
+                x:Name="PPLBtn"
+                Clicked="PPLBtn_Clicked"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+
+        <Button Text="Arnold Split"
+                x:Name="ArnoldBtn"
+                Clicked="ArnoldBtn_Clicked"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+
+        <Button Text="Back"
+                x:Name="backBtn"
+                Clicked="backBtn_Clicked"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

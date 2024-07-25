@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.OnboardingPage"
+             xmlns:views="clr-namespace:Calorium.Views"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
+    <VerticalStackLayout BackgroundColor="White" Spacing="10" Padding="10">
+        <Label Text="......................................................................"
+                   FontSize="35"
+                   TextColor="White"/>
+        <Label Text="Welcome to Calorium!"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="20"/>
+        <Label Text="Check out our website!"
+                       SemanticProperties.HeadingLevel="Level1"
+                       FontSize="20"
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                       VerticalOptions="Center"/>
+        <Grid>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Grid.GestureRecognizers>
+            <skia:SKLottieView Source="browser_animation.json"
+                               HeightRequest="100"
+                               WidthRequest="100"
+                               RepeatCount="-1"
+                               RepeatMode="Restart"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"></skia:SKLottieView>
+        </Grid>
+        <Button
+                    Text="Skip"
+                    Clicked="GoToCalorium_Clicked"
+                    TextColor="Black"
+                    BackgroundColor="LightGreen"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

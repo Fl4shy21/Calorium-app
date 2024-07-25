@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.Diet"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="White" Padding="10" Spacing="10">
+            <skia:SKLottieView 
+                Source="diet_animation.json"
+                HeightRequest="100"
+                WidthRequest="100"
+                RepeatCount="-1"
+                RepeatMode="Restart"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+
+            <Label
+            Text="Nutrition:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+            <Button Text="Proteins"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="proteinsBtn"
+                    Pressed="proteinsBtn_Pressed"
+                    Released="proteinsBtn_Released"/>
+
+            <Button Text="Carbohydrates"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="carbsBtn"
+                    Pressed="carbsBtn_Pressed"
+                    Released="carbsBtn_Released"/>
+
+            <Button Text="Fats"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="fatsBtn"
+                    Pressed="fatsBtn_Pressed"
+                    Released="fatsBtn_Released"/>
+
+            <Button Text="Bulk"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="bulkBtn"
+                    Pressed="bulkBtn_Pressed"
+                    Released="bulkBtn_Released"/>
+
+            <Button Text="Cut"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="cutBtn"
+                    Pressed="cutBtn_Pressed"
+                    Released="cutBtn_Released"/>
+
+            <Button Text="Body recomposition"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="recompositionBtn"
+                    Pressed="recompositionBtn_Pressed"
+                    Released="recompositionBtn_Released"/>
+
+            <Label x:Name="proteinLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="carbsLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="fatsLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="bulkLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="cutLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label x:Name="recompositionLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
