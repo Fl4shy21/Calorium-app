@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Calorium.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Calorium.Views"
+    xmlns:local="clr-namespace:Calorium"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Title="Calorium"
+    BackgroundColor="White"
+    Shell.BackgroundColor="LightGreen"
+    Shell.TitleColor="Black"
+    Shell.ForegroundColor="White"
+    Shell.TabBarDisabledColor="Black"
+    Shell.TabBarTitleColor="Black"
+    Shell.TabBarForegroundColor="LightGreen"
+    Shell.TabBarBackgroundColor="White"
+    Shell.FlyoutBehavior="Disabled"
+    FlyoutBackgroundColor="White"
+    Shell.FlyoutItemIsVisible="True">
+
+    <Shell.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="LightGreen"/>
+    </Shell.Behaviors>
+
+    <ShellContent ContentTemplate="{DataTemplate views:OnboardingPage}" 
+                  Shell.FlyoutBehavior="Disabled"/>
+
+    <TabBar IsVisible="True" x:Name="mainTabBar">
+
+        <ShellContent 
+            Title="Home"
+            ContentTemplate="{DataTemplate views:MenuPage}"
+            Route="MenuPage"
+            Icon="homeicon.png"/>
+
+        <ShellContent 
+        Title="Calculate Your Goals"
+        ContentTemplate="{DataTemplate views:MaintenanceLevelCalculator}"
+        Route="MaintenanceLevelCalculator"
+        Icon="calculatoricon.png"/>
+
+        <ShellContent 
+        Title="Get To Know"
+        ContentTemplate="{DataTemplate views:GetToKnow}"
+        Route="GetToKnow"
+            Icon="lightbulbicon.png"/>
+
+        <ShellContent 
+        Title="Choose Your Plan"
+        ContentTemplate="{DataTemplate views:ChooseYourPlan}"
+        Route="ChooseYourPlan"
+            Icon="clipboardicon.png"/>
+    </TabBar>
+
+    <Shell.FlyoutHeader>
+        <Border BackgroundColor="LightGreen"
+                Padding="10">
+            <VerticalStackLayout>
+                <Image Source="calorium_logo"
+                       HorizontalOptions='Fill'></Image>
+                <Label
+                    Text="Calorium"
+                    FontSize="20"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Border BackgroundColor="LightGreen"
+                Padding="10"
+                StrokeThickness="0">
+            <VerticalStackLayout>
+                <Label Text="Train hard, rest hard!"
+               TextColor="Black"
+               FontSize="20"
+               HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+    </Shell.FlyoutFooter>
+
+</Shell>
