@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.Push_Pull_Legs_Intermediate">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="White"
+                         Spacing="15"
+                         Padding="15">
+
+            <Label Text="Do each rep slowly and controlled. All final sets from all exercises should be taken close enough to failure."
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Red"
+                   FontSize="25"/>
+            
+            <Label 
+            Text="Day 1:"
+            TextColor="Black"
+            FontSize="25"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"/>
+
+            <Label Text="Chest:&#xA;"
+               TextColor="Black"
+               FontSize="25"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"/>
+            <Label Text=" Incline Dumbbell Bench Press: 3 sets x 8-12 reps&#xA; Pec-deck: 3 sets x 8-12 reps&#xA; Dips (weighted or not): 1 set to failure&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="Black"/>
+
+            <Label Text="Triceps:&#xA;"
+               TextColor="Black"
+               FontSize="25"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"/>
+            <Label Text=" Pushdowns: 3 sets x 10-15 reps&#xA; Skullcrushers: 3 sets x 10-15 reps&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"
+               TextColor="Black"/>
+
+            <Label Text="Day 2:"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"/>
+
+            <Label Text="Back:&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"/>
+            <Label Text=" Pull-ups (weighted or not): 1 set to failure&#xA; T-bar rows: 4 sets x 8-12 reps&#xA; Lat pulldowns: 3 sets x 8-12 reps&#xA; Barbell rows: 3 sets x 8-12 reps&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="20"/>
+
+            <Label Text="Biceps:&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"/>
+            <Label Text=" Preacher curls: 3 sets x 10-15 reps&#xA; Hammer curls: 3 sets x 10-15 reps&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="20"/>
+
+            <Label Text="Day 3:"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+            <Label Text="Legs:&#xA;"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+            <Label Text=" Squats: 4 set x 10-15 reps&#xA; Leg extensions: 4 sets x 10-15 reps&#xA; Hamstring curls: 3 sets x 10-15 reps&#xA; Hip thrusts: 3 sets x 10-15 reps&#xA; Standing calf raises: 3 sets x 12-20 reps&#xA;"
+               TextColor="Black"
+               FontSize="20"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+            <Label Text="Day 4:"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+            <Label Text="Shoulders:&#xA;"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+            <Label Text=" Shoulder press: 2 sets x 8-12 reps&#xA; Lateral raises: 4 sets x 10-15 reps&#xA; Reverse pec-deck: 3 sets x 10-15 reps&#xA;"
+               FontSize="20"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+
+            <Label Text="Traps:&#xA;"
+               TextColor="Black"
+               FontSize="25"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+            <Label Text=" Shrugs: 3 sets x 15-20 reps&#xA;"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               TextColor="Black"
+               FontSize="20"/>
+
+            <Label Text="Forearms:&#xA;"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="25"
+               FontAttributes="Bold"/>
+            <Label Text="Deadhangs: 1 set to failure&#xA;"
+               TextColor="Black"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="20"/>
+
+            <Button Text="Back"
+                BackgroundColor="LightGreen"
+                TextColor="Black"
+                x:Name="backBtn"
+                Clicked="backBtn_Clicked"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
