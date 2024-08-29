@@ -39,6 +39,15 @@ namespace Calorium.Views
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        private void ChangeShadowColor(Button button, Color color)
+        {
+            button.Shadow = new Shadow
+            {
+                Brush = new SolidColorBrush(color),
+                Offset = new Point(5, 5),
+                Radius = 25
+            };
+        }
 
         private void proteinfatcarbsBtn_Clicked(object sender, EventArgs e)
         {
@@ -228,14 +237,14 @@ namespace Calorium.Views
             ChooseImperial.IsVisible = !ChooseImperial.IsVisible;
             macroCalculatorContent.IsVisible = false;
             dailyCalculator.IsVisible = false;
-            BMRBtn.BackgroundColor = Colors.LightBlue;
+            BMRBtn.BackgroundColor = Color.FromRgb(15, 209, 173);
         }
 
         private void BMRBtn_Released(object sender, EventArgs e)
         {
-            BMRBtn.BackgroundColor = Colors.LightBlue;
-            macroBtn.BackgroundColor = Colors.LightGreen;
-            caloricBtn.BackgroundColor = Colors.LightGreen;
+            BMRBtn.BackgroundColor = Color.FromRgb(15, 209, 173);
+            macroBtn.BackgroundColor = Color.FromRgb(124, 230, 163);
+            caloricBtn.BackgroundColor = Color.FromRgb(124, 230, 163);
             metricBMR.IsVisible = false;
             imperialBMR.IsVisible = false;
         }
@@ -266,14 +275,14 @@ namespace Calorium.Views
             imperialBMR.IsVisible = false;
             ChooseMetric.IsVisible = false;
             ChooseImperial.IsVisible = false;
-            caloricBtn.BackgroundColor = Colors.LightBlue;
+            caloricBtn.BackgroundColor = Color.FromRgb(15, 209, 173);
         }
 
         private void caloricBtn_Released(object sender, EventArgs e)
         {
-            caloricBtn.BackgroundColor = Colors.LightBlue;
-            macroBtn.BackgroundColor = Colors.LightGreen;
-            BMRBtn.BackgroundColor = Colors.LightGreen;
+            caloricBtn.BackgroundColor = Color.FromRgb(15, 209, 173);
+            macroBtn.BackgroundColor = Color.FromRgb(124, 230, 163);
+            BMRBtn.BackgroundColor = Color.FromRgb(124, 230, 163);
         }
 
         private void macroBtn_Pressed(object sender, EventArgs e)
@@ -284,14 +293,14 @@ namespace Calorium.Views
             imperialBMR.IsVisible = false;
             ChooseMetric.IsVisible = false;
             ChooseImperial.IsVisible = false;
-            macroBtn.BackgroundColor = Colors.LightBlue;
+            macroBtn.BackgroundColor = Color.FromRgb(15, 209, 173);
         }
 
         private void macroBtn_Released(object sender, EventArgs e)
         {
-            macroBtn.BackgroundColor = Colors.LightBlue;
-            BMRBtn.BackgroundColor= Colors.LightGreen;
-            caloricBtn.BackgroundColor = Colors.LightGreen;
+            macroBtn.BackgroundColor = Color.FromRgb(15, 209, 173);
+            BMRBtn.BackgroundColor= Color.FromRgb(124, 230, 163);
+            caloricBtn.BackgroundColor = Color.FromRgb(124, 230, 163);
         }
     }
 }
