@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.ContactCreator"
+             Title=""
+             BackgroundColor="White"
+             Shell.TabBarIsVisible="True">
+    <VerticalStackLayout Padding="10" Spacing="10">
+        <Label Text="G-Mail: albert.malicski98@gmail.com&#x0a;"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               FontSize="20"
+               TextColor="OrangeRed"/>
+        <Image Source="youtube.png"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               WidthRequest="75">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="YouTubebtn_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Image Source="discord.svg"
+               VerticalOptions="Start"
+               HorizontalOptions="Start"
+               WidthRequest="75">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Discordbtn_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
+        <Grid>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="FiverrURL_Tapped"/>
+            </Grid.GestureRecognizers>
+            <Image Source="fiverr_logo.png"
+                   WidthRequest="75"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"></Image>
+        </Grid>
+        <Button Text="Back to Menu"
+                TextColor="Black"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                x:Name="cancelBtn"
+                Clicked="cancelBtn_Clicked">
+            <Button.Shadow>
+                <Shadow                         
+                        Brush="#5bc7cf"
+                        Offset="5,5"
+                        Radius="25"/>
+            </Button.Shadow>
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#5bc7cf" Offset="0.3"/>
+                    <GradientStop Color="#2b86ad" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>
