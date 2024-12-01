@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.GetToKnow"
+             Title=""
+             xmlns:loc="clr-namespace:LocalizationResourceManager.Maui;assembly=LocalizationResourceManager.Maui"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="15" BackgroundColor="White">
+
+            <Grid>
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnBicepAnimationTapped"/>
+                </Grid.GestureRecognizers>
+
+                <Image Source="selfmade_dumbbell.png"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+            </Grid>
+
+            <Label Text="Training"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+
+            <Grid>
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDietAnimationTapped"/>
+                </Grid.GestureRecognizers>
+                <Image Source="frutiger_aero_food.png"
+                       WidthRequest="150"
+                       HeightRequest="150"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            </Grid>
+
+            <Label Text="Diet"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+
+            <Grid>
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSupplementsAnimationTapped"/>
+                </Grid.GestureRecognizers>
+                <Image Source="gatorade_bottle.png"
+                       WidthRequest="125"
+                       HeightRequest="125"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+            </Grid>
+
+            <Label Text="Supplements"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="20"
+                   TextColor="Black"
+                   FontAttributes="Bold"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

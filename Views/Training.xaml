@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calorium.Views.Training"
+             Title=""
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="White" Padding="10" Spacing="10">
+            <Grid Grid.Row="1" Margin="25, 10, 25, 10">
+                <RoundRectangle CornerRadius="25" Fill="#7ce6a3" HeightRequest="50"/>
+                <SearchBar x:Name="searchBar" Placeholder="Search..." TextChanged="SearchBar_TextChanged" TextColor="Black" BackgroundColor="#7ce6a3"/>
+            </Grid>
+
+            <Image Source="selfmade_dumbbell.png"
+                   WidthRequest="125"
+                   HeightRequest="125"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+
+            <Label 
+            Text="Training:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"/>
+
+            <Label Text="Beginners:"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="25"/>
+
+            <Button Text="Getting adjusted"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="usedBtn"
+                    Pressed="usedBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#0fd1ad" Offset="0.2"/>
+                        <GradientStop Color="#7ce6a3" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="usedLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button Text="Warming up"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="warmupBtn"
+                    Pressed="warmupBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#7ce6a3" Offset="0.2"/>
+                        <GradientStop Color="#0fd1ad" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="warmupLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button Text="Rest"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="restBtn"
+                    Pressed="restBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#0fd1ad" Offset="0.2"/>
+                        <GradientStop Color="#7ce6a3" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="restTrainingLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button Text="Progressive overload"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="overloadBtn"
+                    Pressed="overloadBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#7ce6a3" Offset="0.2"/>
+                        <GradientStop Color="#0fd1ad" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="overloadLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label Text="Intermediates:"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="25"/>
+
+            <Button Text="Switching between exercises"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="switchingBtn"
+                    Pressed="switchingBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#0fd1ad" Offset="0.2"/>
+                        <GradientStop Color="#7ce6a3" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="switchingLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button Text="Training to failure"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="failureBtn"
+                    Pressed="failureBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#7ce6a3" Offset="0.2"/>
+                        <GradientStop Color="#0fd1ad" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="failureLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label Text="Gym rats:"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="25"/>
+
+            <Button Text="What is Heavy Duty?"
+                    TextColor="Black"
+                    FontSize="15"
+                    x:Name="heavydutyBtn"
+                    Pressed="heavydutyBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#0fd1ad" Offset="0.2"/>
+                        <GradientStop Color="#7ce6a3" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="heavydutyLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Button Text="Junk volume"
+                   TextColor="Black"
+                   FontSize="15"
+                   x:Name="junkBtn"
+                   Pressed="junkBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#7ce6a3" Offset="0.2"/>
+                        <GradientStop Color="#0fd1ad" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="junkLabel" Text="" FontSize="20" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+            <Label 
+            Text="Cardio:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"/>
+
+            <Button Text="Aerobic vs. anaerobic exercise"
+                    TextColor="Black"
+                    x:Name="aerobicBtn"
+                    Pressed="aerobicBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#0fd1ad" Offset="0.2"/>
+                        <GradientStop Color="#7ce6a3" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="aerobicLabel" Text="" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20"/>
+
+            <Button Text="Fun ways to do cardio"
+                    TextColor="Black"
+                    x:Name="funCardioBtn"
+                    Pressed="funCardioBtn_Pressed">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#7ce6a3" Offset="0.2"/>
+                        <GradientStop Color="#0fd1ad" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="funCardioLabel" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" TextColor="Black"/>
+
+            <Label 
+            Text="Other ways to workout:"
+            FontSize="25"
+            TextColor="Black"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"/>
+
+            <Button Text="Calisthenics"
+                    x:Name="calisthenicsBtn"
+                    Pressed="calisthenicsBtn_Pressed"
+                    TextColor="Black">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#0fd1ad" Offset="0.2"/>
+                        <GradientStop Color="#7ce6a3" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="calisthenicsLabel" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" TextColor="Black"/>
+
+            <Button Text="How to make going to the gym more fun?"
+                    x:Name="fungymBtn"
+                    Pressed="fungymBtn_Pressed"
+                    TextColor="Black">
+                <Button.Shadow>
+                    <Shadow 
+                        Brush="#7ce6a3"
+                        Offset="5,5"
+                        Radius="25"/>
+                </Button.Shadow>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#7ce6a3" Offset="0.2"/>
+                        <GradientStop Color="#0fd1ad" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="fungymLabel" Text="" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" TextColor="Black"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
